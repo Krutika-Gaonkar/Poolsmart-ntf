@@ -52,7 +52,15 @@ export const CalendarAlert: React.FC<CalendarAlertProps> = ({
     return calendarUrl;
   };
 
- 
+  const handleAddToCalendar = () => {
+    const calendarUrl = generateGoogleCalendarUrl();
+    window.open(calendarUrl, '_blank');
+    
+    toast({
+      title: "Calendar event created",
+      description: "Your ride has been added to Google Calendar.",
+    });
+  };
 
   return (
     <Button

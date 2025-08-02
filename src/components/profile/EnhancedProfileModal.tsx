@@ -205,23 +205,9 @@ export function EnhancedProfileModal({
                   </Select>
                 </div>
                 
-                <div>
-                  <label className="block text-sm font-medium mb-2">
-                    <Luggage className="h-4 w-4 inline mr-1" />
-                    Luggage Size
-                  </label>
-                  <Select value={preferences.luggageSize} onValueChange={(value) => updatePreference('luggageSize', value)}>
-                    <SelectTrigger>
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="small">Small</SelectItem>
-                      <SelectItem value="medium">Medium</SelectItem>
-                      <SelectItem value="large">Large</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-              </div>
+
+
+                
               
               <div className="space-y-3 mt-4">
                 <div className="flex items-center justify-between">

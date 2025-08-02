@@ -58,17 +58,7 @@ const Rides = () => {
     setFilters(newFilters);
   };
 
-  const handleCreateRideSuccess = () => {
-    console.log("Rides page: Ride created successfully!");
-    const newTrigger = refreshTrigger + 1;
-    console.log(`Rides page: Updating refresh trigger from ${refreshTrigger} to ${newTrigger}`);
-    setRefreshTrigger(newTrigger);
-    setShowCreateRideForm(false);
-    toast({
-      title: "Success",
-      description: "Your ride has been listed successfully!",
-    });
-  };
+  
 
   useEffect(() => {
     console.log("Rides page: refreshTrigger changed to", refreshTrigger);

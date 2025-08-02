@@ -16,7 +16,7 @@ const Events = () => {
   const [searchCriteria, setSearchCriteria] = useState({
     keyword: '',
     location: '',
-    startDate: '',
+    startDate: '', 
     endDate: '',
   });
 

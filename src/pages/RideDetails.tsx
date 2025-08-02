@@ -28,6 +28,7 @@ const RideDetails = () => {
   const { toast } = useToast();
 
   useEffect(() => {
+    
     loadRideDetails();
     if (user) {
       loadUserRequests();
@@ -55,6 +56,7 @@ const RideDetails = () => {
       console.error("Error loading ride details:", error);
       toast({
         title: "Error",
+        
         description: "Failed to load ride details. Please try again.",
         variant: "destructive",
       });
